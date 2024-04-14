@@ -65,6 +65,7 @@ namespace MyCompanyName.AbpZeroTemplate
             configuration.CreateMap<ILocalizableComboboxItem, LocalizableComboboxItemDto>()
                 .Include<LocalizableComboboxItem, LocalizableComboboxItemDto>();
 
+            //Employees
             configuration.CreateMap<Employee, EmployeeListDto>();
 
             //Chat
