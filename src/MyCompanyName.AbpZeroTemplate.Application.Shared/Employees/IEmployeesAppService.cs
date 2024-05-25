@@ -10,5 +10,11 @@ namespace MyCompanyName.AbpZeroTemplate.Employees
     {
         //ListResultDto<Dto.EmployeeListDto> GetEmployees(Dto.GetEmployeesInput input);
         Task<PagedResultDto<Dto.EmployeeListDto>> GetEmployees(GetEmployeesInput input);
+
+        Task CreateEmployee(EmployeeCreateDto input);
+
+        Task EditEmployee(EntityDto input);
+
+        Task DeleteEmployee(EntityDto input);
     }
 }

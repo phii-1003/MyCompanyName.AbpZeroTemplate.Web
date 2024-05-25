@@ -11,7 +11,10 @@ using MyCompanyName.AbpZeroTemplate.Friendships;
 using MyCompanyName.AbpZeroTemplate.MultiTenancy;
 using MyCompanyName.AbpZeroTemplate.MultiTenancy.Accounting;
 using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments;
+using MyCompanyName.AbpZeroTemplate.Schedule.Dto;
+using MyCompanyName.AbpZeroTemplate.Schedules;
 using MyCompanyName.AbpZeroTemplate.Storage;
+using MyCompanyName.AbpZeroTemplate.Students;
 
 
 namespace MyCompanyName.AbpZeroTemplate.EntityFrameworkCore
@@ -20,6 +23,11 @@ namespace MyCompanyName.AbpZeroTemplate.EntityFrameworkCore
     {
         /* Define an IDbSet for each entity of the application */
         public virtual DbSet<Employee> Employees { get; set; }
+
+        public virtual DbSet<Student> Students { get; set; }
+
+        public virtual DbSet<MyCompanyName.AbpZeroTemplate.Schedules.Schedule> Schedule { get; set; }
+
         public virtual DbSet<BinaryObject> BinaryObjects { get; set; }
 
         public virtual DbSet<Friendship> Friendships { get; set; }

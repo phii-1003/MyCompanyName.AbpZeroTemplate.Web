@@ -30,6 +30,7 @@ using MyCompanyName.AbpZeroTemplate.Dto;
 using MyCompanyName.AbpZeroTemplate.Notifications;
 using MyCompanyName.AbpZeroTemplate.Url;
 using MyCompanyName.AbpZeroTemplate.Organizations.Dto;
+using OrganizationUnitDto = MyCompanyName.AbpZeroTemplate.Organizations.Dto.OrganizationUnitDto;
 
 namespace MyCompanyName.AbpZeroTemplate.Authorization.Users
 {

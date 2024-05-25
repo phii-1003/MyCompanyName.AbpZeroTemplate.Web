@@ -12,7 +12,7 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
     <RootNamespace>MyCompanyName.AbpZeroTemplate.Web</RootNamespace>
-    <OutputType>Library</OutputType>
+	<OutputType>Library</OutputType>
     <GenerateDocumentationFile>False</GenerateDocumentationFile>
   </PropertyGroup>
 

@@ -12,6 +12,7 @@ namespace MyCompanyName.AbpZeroTemplate.Employees
     {
         public const int MaxNameLength = 32;
         public const int PhoneNumberLength = 10;
+        public const int MaxEmailLength = 255;
 
         [Required]
         [MaxLength(MaxNameLength)]
@@ -21,6 +22,10 @@ namespace MyCompanyName.AbpZeroTemplate.Employees
         public virtual string PhoneNumber { get; set;}
 
         [Required]
+        [MaxLength(MaxEmailLength)]
+        public string Email { get; set; }
+
+        [Required]
         public virtual string SSN { get; set; }
 
         [Required]
@@ -28,7 +33,21 @@ namespace MyCompanyName.AbpZeroTemplate.Employees
 
         public virtual string Address { get; set; }
         
-        public virtual uint YearOfBirth { get; set; } = 2000;
+        public virtual uint YearOfBirth { get; set; }
 
+        public virtual uint Salary { get; set; }
+
+        /*public Employee(string name, string phoneNumber, string sSN, string employeeID, string address, uint yearOfBirth = 2000, uint salary = 400)
+        {
+            Name = name;
+            PhoneNumber = phoneNumber;
+            SSN = sSN;
+            EmployeeID = employeeID;
+            Address = address;
+            YearOfBirth = yearOfBirth;
+            Salary = salary;
+
+            CreationTime = DateTime.Now;
+        }*/
     }
 }

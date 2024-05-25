@@ -94,6 +94,14 @@ namespace MyCompanyName.AbpZeroTemplate.Authorization
 
             pages.CreateChildPermission(AppPermissions.Pages_Tenant_Dashboard, L("Dashboard"), multiTenancySides: MultiTenancySides.Tenant);
 
+            pages.CreateChildPermission(AppPermissions.Pages_Tenant_Employees, L("Employee"), multiTenancySides: MultiTenancySides.Tenant);
+            pages.CreateChildPermission(AppPermissions.Pages_Tenant_PhoneBook_DeleteEmployee, L("DeleteEmployee"), multiTenancySides: MultiTenancySides.Tenant);
+
+            pages.CreateChildPermission(AppPermissions.Pages_Tenant_Student, L("Student"), multiTenancySides: MultiTenancySides.Tenant);
+            pages.CreateChildPermission(AppPermissions.Pages_Tenant_Student_Create, L("CreateStudent"), multiTenancySides: MultiTenancySides.Tenant);
+            pages.CreateChildPermission(AppPermissions.Pages_Tenant_Schedule, L("Schedule"), multiTenancySides: MultiTenancySides.Tenant);
+            pages.CreateChildPermission(AppPermissions.Pages_Tenant_Timetable, L("Timetable"), multiTenancySides: MultiTenancySides.Tenant);
+
             administration.CreateChildPermission(AppPermissions.Pages_Administration_Tenant_Settings, L("Settings"), multiTenancySides: MultiTenancySides.Tenant);
             administration.CreateChildPermission(AppPermissions.Pages_Administration_Tenant_SubscriptionManagement, L("Subscription"), multiTenancySides: MultiTenancySides.Tenant);
 

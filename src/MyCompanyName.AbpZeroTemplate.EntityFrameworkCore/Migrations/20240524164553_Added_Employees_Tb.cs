@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MyCompanyName.AbpZeroTemplate.Migrations
 {
-    public partial class Added_Employees_Table : Migration
+    public partial class Added_Employees_Tb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -17,10 +17,12 @@ namespace MyCompanyName.AbpZeroTemplate.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(32)", maxLength: 32, nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     SSN = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EmployeeID = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     YearOfBirth = table.Column<long>(type: "bigint", nullable: false),
+                    Salary = table.Column<long>(type: "bigint", nullable: false),
                     CreationTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CreatorUserId = table.Column<long>(type: "bigint", nullable: true),
                     LastModificationTime = table.Column<DateTime>(type: "datetime2", nullable: true),

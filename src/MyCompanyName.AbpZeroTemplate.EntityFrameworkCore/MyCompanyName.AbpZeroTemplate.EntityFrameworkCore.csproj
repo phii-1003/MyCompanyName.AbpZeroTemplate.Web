@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyCompanyName.AbpZeroTemplate.Core\MyCompanyName.AbpZeroTemplate.Core.csproj" />
+    <ProjectReference Include="..\MyCompanyName.AbpZeroTemplate.GraphQL\MyCompanyName.AbpZeroTemplate.GraphQL.csproj" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">

@@ -12,8 +12,8 @@ using MyCompanyName.AbpZeroTemplate.EntityFrameworkCore;
 namespace MyCompanyName.AbpZeroTemplate.Migrations
 {
     [DbContext(typeof(AbpZeroTemplateDbContext))]
-    [Migration("20240401003613_added-employees-table")]
-    partial class addedemployeestable
+    [Migration("20240524164553_Added_Employees_Tb")]
+    partial class Added_Employees_Tb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -1791,6 +1791,11 @@ namespace MyCompanyName.AbpZeroTemplate.Migrations
                     b.Property<DateTime?>("DeletionTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
                     b.Property<string>("EmployeeID")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -1816,6 +1821,9 @@ namespace MyCompanyName.AbpZeroTemplate.Migrations
                     b.Property<string>("SSN")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("Salary")
+                        .HasColumnType("bigint");
 
                     b.Property<long>("YearOfBirth")
                         .HasColumnType("bigint");

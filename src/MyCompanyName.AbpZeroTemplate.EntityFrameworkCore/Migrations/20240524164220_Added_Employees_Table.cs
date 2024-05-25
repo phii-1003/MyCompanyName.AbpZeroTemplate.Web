@@ -4,7 +4,7 @@
 
 namespace MyCompanyName.AbpZeroTemplate.Migrations
 {
-    public partial class addedemployeestable : Migration
+    public partial class Added_Employees_Table : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

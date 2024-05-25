@@ -74,6 +74,12 @@
         //TENANT-SPECIFIC PERMISSIONS
 
         public const string Pages_Tenant_Dashboard = "Pages.Tenant.Dashboard";
+        public const string Pages_Tenant_Employees = "Pages.Tenant.Employees";
+        public const string Pages_Tenant_PhoneBook_DeleteEmployee = "Pages.Tenant.Employees.Delete";
+        public const string Pages_Tenant_Timetable = "Pages.Tenant.Timetable";
+        public const string Pages_Tenant_Student = "Pages.Tenant.Student";
+        public const string Pages_Tenant_Student_Create = "Pages.Tenant.Student.Create";
+        public const string Pages_Tenant_Schedule = "Pages.Tenant.Schedule";
 
         public const string Pages_Administration_Tenant_Settings = "Pages.Administration.Tenant.Settings";
 
@@ -97,6 +103,13 @@
         public const string Pages_Administration_Host_Maintenance = "Pages.Administration.Host.Maintenance";
         public const string Pages_Administration_Host_Settings = "Pages.Administration.Host.Settings";
         public const string Pages_Administration_Host_Dashboard = "Pages.Administration.Host.Dashboard";
+
+        //EMPLOYEE PERMISSIONS
+        public const string Pages_Schedules = "Pages.Schedules";
+        public const string Pages_Schedules_Create = "Pages.Schedules.Create";
+        public const string Pages_Schedules_Edit = "Pages.Schedules.Edit";
+        public const string Pages_Schedules_Delete = "Pages.Schedules.Delete";
+        //USER PERMISSIONS
 
     }
 }

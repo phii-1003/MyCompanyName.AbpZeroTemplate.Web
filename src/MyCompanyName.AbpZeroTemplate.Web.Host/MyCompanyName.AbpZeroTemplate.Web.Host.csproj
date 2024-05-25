@@ -28,10 +28,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Include="..\MyCompanyName.AbpZeroTemplate.Core\Employees\Employee.cs" Link="Employee.cs" />
-    </ItemGroup>
-
-    <ItemGroup>
         <None Include="app.config" />
         <None Include="wwwroot\Plugins\.gitkeep" />
         <None Update="Dockerfile">

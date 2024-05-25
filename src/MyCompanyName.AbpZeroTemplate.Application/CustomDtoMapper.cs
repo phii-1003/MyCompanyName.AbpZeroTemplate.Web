@@ -41,7 +41,10 @@ using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments;
 using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments.Dto;
 using MyCompanyName.AbpZeroTemplate.Notifications.Dto;
 using MyCompanyName.AbpZeroTemplate.Organizations.Dto;
+using MyCompanyName.AbpZeroTemplate.Schedule.Dto;
 using MyCompanyName.AbpZeroTemplate.Sessions.Dto;
+using MyCompanyName.AbpZeroTemplate.Students;
+using MyCompanyName.AbpZeroTemplate.Students.Dto;
 using MyCompanyName.AbpZeroTemplate.WebHooks.Dto;
 
 namespace MyCompanyName.AbpZeroTemplate
@@ -67,6 +70,13 @@ namespace MyCompanyName.AbpZeroTemplate
 
             //Employees
             configuration.CreateMap<Employee, EmployeeListDto>();
+            configuration.CreateMap<EmployeeCreateDto, Employee>();
+
+            //Students
+            configuration.CreateMap<Student, StudentListDto>();
+
+            //Schedules
+            configuration.CreateMap<MyCompanyName.AbpZeroTemplate.Schedules.Schedule, ScheduleListDto>();
 
             //Chat
             configuration.CreateMap<ChatMessage, ChatMessageDto>();
